@@ -18,6 +18,10 @@ async def hello(ctx):
     await ctx.send(f'Olá! eu sou um bot {bot.user}!')
 
 @bot.command()
+async def qualitys(ctx):
+    await ctx.send(suas_qualidades())
+
+@bot.command()
 async def recicle(ctx):
     await ctx.send(dicas_function())
 bot.run("token")
